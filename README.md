@@ -21,8 +21,10 @@ Theres a better way to do this using bashs reference variables introduced in 4.3
 elements_to_remove=("foo" "bar")
 target_array=("foo" "yes" "no" "I hate flutter" "bar")
 
+# new array gets returned 
+return_array="$(delete_indice_array_elements "${#elements_to_remove[@]}" "${elements_to_remove[@]}" "${target_array[@]}")"
+
 printf "New Array With Elements Removed\n"
 
-# new array gets returned 
-printf "%s | " "${$(delete_indice_array_elements "${#elements_to_remove[@]}" "${elements_to_remove[@]}" "${target_array[@]}")[@]}"
+printf "%s | " "${return_array[@]}"
 ```
