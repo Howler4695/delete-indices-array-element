@@ -2,7 +2,7 @@
 
 ### IMPORTANT
 
-Theres a better way to do this using bashs reference variables introduced in 4.3 `local -n`, but I did it this way so that it can be portable to other shell scripting languages / versions. 
+Theres a better way to do this using bashs reference variables introduced in 4.3 `local -n` ( also allows for implicit mutation on target if that's your thing ), but I did it this way so that it can be portable to other shell scripting languages / versions. 
 
 ### Input
 
